@@ -11,7 +11,7 @@ h1 { font-size: 15px;
 h2 { font-size: 12px; font-weight: bold; color: #005ca0; }
 
 p[align="justify"] { margin-bottom: 12px; }
-ul { list-style-type:none;}
+ul { list-style-type:none; padding-inline-start: 0px;}
 #container { width: 900px; margin: 0 auto; padding-bottom: 30px; }
 .fLeft { float: left; }
 .fRight { float: right; }
@@ -60,7 +60,7 @@ a:active{border-width:1px;border-style:dotted;}
 #sideMenu div.sideMenuCube a.readMore:hover { color: #005ca0; }
 
 /*** Cubes ***/
-.cube { width: 248px; height: 142px; padding: 18px 22px 15px; background: url(images/cube_bg.png) no-repeat 0 0; }
+.cube { position: relative;  width: 248px; height: 142px; padding: 0px ; background: url(images/cube_bg.png) no-repeat 0 0; }
 .cube h3.header { font-size: 15px; font-weight: bold; color: #005ca0; margin-bottom: 10px; }
 .cube .content { font-size: 13px; color: #6d6d6d; width: 248px; }
 .imageCube { position: relative; width: 291px; /*height: 443px;*/ overflow: hidden; }
@@ -117,7 +117,7 @@ a.readMore99 span { padding-left: 12px; color:#72716D; }
 
 
 #header #mainMenu { height: 33px; position: relative; top: 72px; margin: 0 143px 0 0;padding: 0;}
-#header #mainMenu li { height: 100%; float: right; position: relative; display: block; }
+#header #mainMenu li { height: 100%; float: right; position: relative; display: block; ; text-align: right}
 #header #mainMenu li.sep { width: 4px; height: 21px; background: url("images/menu_sep.png") no-repeat 0 0px; margin: 0 16px; }
 #header #mainMenu li a.home { width: 17px; background: url(images/menu_home.png) no-repeat 0 top; }
 #header #mainMenu li a.home:hover, #header #mainMenu li a.home.selectednode { background-position: -17px top; }
@@ -128,20 +128,21 @@ a.readMore99 span { padding-left: 12px; color:#72716D; }
 #header #mainMenu li ul li { float: none; padding: 0 5px; }
 *+html #header #mainMenu li ul li { width: 220px; overflow: hidden; }
 #header #mainMenu li ul li:hover { background-color: #bcbcbc; display: block; }
-#header #mainMenu li ul li a { display: block; width: 100%; height: 100%; padding: 5px 0; white-space: nowrap; }
+#header #mainMenu li ul li a { display: block; width: 100%; height: 100%; padding: 5px 0; white-space: nowrap;  }
 #header #mainMenu li ul li a:hover { color: #005ca0; width: 100%; background: url ("images/pixel.jpg"); }
-#header #mainMenu li ul li a span { display: block; width: 100%;   }
-#header #mainMenu li ul li.sep { width: 100%; *display: inline; zoom: 1; padding: 0; margin: 0; height: 1px; background: url("images/menu_dropdown_sep.png") repeat-x 0 0; }
-*+html #header #mainMenu li ul li.sep { width: 220px; height: 1px; padding: 0; margin: 0; line-height: 1;}
+#header #mainMenu li ul li a span { display: block; width: 100%; ; text-align: right  }
+#header #mainMenu li ul li.sep {  display: inline; zoom: 1; padding: 0; margin: 0;  background: url("images/menu_dropdown_sep.png") repeat-x 0 0; }
+*+html #header #mainMenu li ul li.sep { width: 220px; height: 1px; padding: 0; margin: 0; line-height: 1}
 #li1{ width:17px;}
+
+.blank { height:10px}
 /**************/
 /***** HP *****/
 /**************/
-#hp { margin-top: 3px; left: 50px; position: relative ; width: 900px ; margin: auto ;  float: left; }
+#hp { left: 50px; position: absolute ; width: 900px ; height: 589px ;  margin-bottom: 40px;}
 /* TABS */
-
-#hp .tab { position: relative; z-index: 10; width: 290px; height: 352px; float: right; }
-#hp .tab.margins { margin: 0 10px; }
+#hp .tabs {position: relative;}
+#hp .tab { position: relative; z-index: 10; width: 290px; height: 352px; float: right; margin: 0px 0px 0px  10px ;}
 #hp .tab img.overlay { position: absolute; top: 0; right: 0; }
 #hp .tab div.text { width: 218px; height: 77px; overflow: hidden; padding: 10px; position: absolute; left: 38px; bottom: 6px; color: #fff; background: rgba( 126,124,121,0.8); border-radius: 0px 0px 20px 0px }
 #hp .tab div.text h3 { font-size: 14px; font-weight: bold; margin: 0px;}
@@ -149,35 +150,41 @@ a.readMore99 span { padding-left: 12px; color:#72716D; }
 #hp .tab div.text a.readMore { float: left; color: #fff; position: relative; bottom: 4px; }
 #hp .tab div.text a.readMore:hover { color: #005ca0; }
 
+
+
 /* CUBES */
-#hp .cubes { margin-top: 18px; color: #575757; padding: 0px; }
-#hp .cubes .hrefdiv {margin-top: 10px;text-align: left;} 
-#hp .cubes .hrefdiv a { color: grey ; font-size:12px} 
 
-#hp .cube { position: relative; float: right; width: 244px;  height: 216px; background: url("images/small_cube_bg.png") no-repeat 0 0; }
-#hp .cube a.readMore { float: left; color: #72716d; }
-#hp .cube a.readMore:hover { color: #005ca0; }
+
+
+
+#hp .cubes { position: absolute; top: 180px; margin: 0px 0px 0px  10px ; margin-bottom: 18px;  color: #575757; padding: 0px; }
+
+
+
+#hp .cube1 .hrefdiv ,   #hp .cube2 .hrefdiv {text-align: left; padding-left: 10px;} 
+#hp .cube1 .hrefdiv a , #hp .cube2 .hrefdiv a{ color: grey ; font-size:12px} 
+
+#hp .cube1 , #hp .cube2 {  height: 190px; width: 290px; margin-top: 10px ;  background: rgba(245, 243, 239, 0.849);  box-sizing:border-box ; border: 1px solid lightgrey ;   border-radius: 0px 0px 20px 0px }
+#hp .cube1 a.readMore  , #hp .cube2 a.readMore { float: left; color: #72716d; }
+#hp .cube1 a.readMore:hover , #hp .cube2 a.readMore:hover { color: #005ca0; }
 #hp .cube.margins { margin: 0 11px; }
+
 #hp .bg {  border-radius: 0px 0px 20px 0px; }
+#hp .cube1 , #hp .cube2 { float: right; position: relative; }
+#hp .cube h3 , #hp .cube1 h3 , #hp .cube2 h3  { position: relative; height: 34px; right: 4px; line-height: 34px; font-size: 14px; font-weight: bold; margin: 0px; margin-bottom: 15px; padding-right: 15px; }
 
-
-#hp .cube h3 { position: relative; height: 34px; right: 4px; line-height: 34px; font-size: 14px; font-weight: bold; margin-bottom: 15px;  }
-#hp .cube1 h3 { margin: 0px;  }
-#hp .cube1 .wrapper { position: relative; }
-#hp .cube1 .image { float: left; width: 115px; height: 100px; }
-#hp .cube1 .image img.bg { width: 115px; height: 120px; }
+#hp .cube1 img , #hp .cube2 img {  width: 260px; height: 100px; padding-right: 15px; }
 #hp .cube1 .text { float: right; font-size: 13px; width: 120px; height: 130px; overflow: hidden; margin-bottom: -20px }
 #hp .cube1 .text a.rMore { color: #575757; text-decoration: underline; }
 #hp .cube1 .text a.rMore:hover { text-decoration: none; }
 
-#hp .cube2 img { width: 250px; height: 110px; }
-#hp .cube2 a.readMore { position: absolute; bottom: 24px; left: 21px; }
 
 
 #hp .cube3 h3 { margin-bottom: 6px; }
 #hp .cube3 img { float: left; }
 #hp .cube3 .text { float: right; }
 #hp .cube3 .text a.readMore { float: none; display: block; margin-bottom: 8px; }
+
 
 
 
