@@ -20,7 +20,7 @@ a.readMore.white { background: url("images/read_more_white.png") no-repeat left 
 a.readMore.yellow { background: url("images/read_more_yellow.png") no-repeat left center; }
 a.readMore:hover { background: url("images/read_more_blue.png") no-repeat left center; }
 a.readMore span { padding-left: 12px; }
-*+html a.readMore span { padding-right: 12px; } /* IE7 */
+
 
 #header { width: 100%; height: 105px; display: flex; flex-flow: column ; margin: auto ;  margin-bottom: 30px;  position: relative; z-index:100; background: rgb(143,153,143)}
 #header #searchBox {  width: 900px; height: 26px;   margin: auto ; margin-top: 20px; margin-bottom: 0px;  display: flex ; flex-direction: row ;   }
@@ -44,13 +44,11 @@ a.readMore span { padding-left: 12px; }
 #header #mainMenu li ul { position:absolute; z-index: 200; top: 33px; right: 0; display: none; background: rgb(143,153,143) url("images/menu_dropdown_bg.png") repeat-x 0 0; }
 #header #mainMenu li:hover ul { display: block; }
 #header #mainMenu li ul li { float: none; padding: 0 5px; }
-*+html #header #mainMenu li ul li { width: 220px; overflow: hidden; }
 #header #mainMenu li ul li:hover { background-color: #bcbcbc; display: block; }
 #header #mainMenu li ul li a { display: block; width: 100%; height: 100%; padding: 5px 0; white-space: nowrap;  }
 #header #mainMenu li ul li a:hover { color: #005ca0; width: 100%; background: url ("images/pixel.jpg"); }
 #header #mainMenu li ul li a span { display: block; width: 100%; ; text-align: right  }
 #header #mainMenu li ul li.sep {  display: inline; zoom: 1; padding: 0; margin: 0;  background: url("images/menu_dropdown_sep.png") repeat-x 0 0; }
-*+html #header #mainMenu li ul li.sep { width: 220px; height: 1px; padding: 0; margin: 0; line-height: 1}
 #li1{ width:17px;}
 
 #hp {  width: 900px ; height: 589px ;  margin:auto ; margin-bottom: 40px;}
