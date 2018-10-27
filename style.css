@@ -1,9 +1,10 @@
 body { direction: rtl; 
        font-family: 'Arial (Hebrew)', Arial;
+       margin: 0px;
+       padding: 0px;
        padding-bottom: 38px; 
-       background: #fff url("images/header_bg.png") repeat-x center top;
        margin-top:0 ;
-    padding-top:0 ;
+       padding-top:0 ;
      }
 h1 { font-size: 15px;
      font-weight: bold; 
@@ -93,27 +94,26 @@ a.readMore99 span { padding-left: 12px; color:#72716D; }
 /******************/
 /***** HEADER *****/
 /******************/
-#header { width: 100%; height: 105px; position: relative; z-index:100; }
-#header a.logo { display: block; width: 142px; height: 93px; position: absolute; bottom: -20px; right: -8px; background: url(images/paz_logo.png) no-repeat 0 0; }
-#header #searchBox { position: absolute; top: 20px; left: 10px; width: 152px; }
-#header #searchBox .input { float: right; width: 132px; height: 19px; background: url("images/search_input.png") no-repeat 0 0; }
-#header #searchBox .input input[type="text"] { position: relative; top: 2px; right: 4px; width: 126px; background: transparent; border: 0 none; }
-#header #searchBox a { float: left; width: 19px; height: 19px; background: url("images/search_button.png") no-repeat 0 0; }
-#header #searchBox a:hover { text-decoration: none; }
+#header { width: 100%; height: 105px; display: flex; flex-flow: column ; margin: auto ;  margin-bottom: 30px;  position: relative; z-index:100; background: rgb(143,153,143)}
+#header #searchBox {  width: 900px; height: 26px;   margin: auto ; margin-top: 20px; margin-bottom: 0px;  display: flex ; flex-direction: row ;   }
+#header #searchBox .input { width: 132px; height: 19px; margin-right: 10px;  background-color: rgb(255,255,255); border-radius: 0px 5px 0px 0px }
+#header #searchBox .input input[type="text"] { top: 2px; right: 4px; width: 120px; right:0px; background: transparent; border: 0 none; }
+#header #searchBox>a {  width: 19px; height: 19px;  background: url("images/search_button.png") no-repeat 0 0; }
+#header #searchBox>a:hover { text-decoration: none; }
+#header #searchBox #langmenu { position: relative; width: 50px ; height: 19px; padding: 0px ; margin: 0px; margin-right: 708px;}
+#header #searchBox #langmenu a{ font-size: 12px;font-weight: bold;color: white;}
 
+#header #main_had_div{ position: relative; display: flex ; flex-direction: row ; top: 0px ; height: 33px; width: 900px; bottom: 2px; margin:auto ;  margin-top: 0px;}
+#header #main_had_div .logo { display: block; width: 133px; height: 93px; margin-top: -12px ; background: url(images/paz_logo.png) no-repeat 0 0; }
 
-#header #langmenu { position: absolute; top: 4px; left: 180px; padding: 0px ; margin: 0px;}
-#header #langmenu a{ font-size: 12px;font-weight: bold;color: white;}
-
-
-#header #mainMenu { height: 33px; position: relative; top: 72px; margin: 0 143px 0 0;padding: 0;}
-#header #mainMenu li { height: 100%; float: right; position: relative; display: block; ; text-align: right}
+#header #mainMenu { height: 33px; width: 757px; margin: auto; margin-top: 25px; margin-right: 10px; }
+#header #mainMenu li { height: 100%; float: right;  position: relative; display: block; ; text-align: right ; right:0px;}
 #header #mainMenu li.sep { width: 4px; height: 21px; background: url("images/menu_sep.png") no-repeat 0 0px; margin: 0 16px; }
 #header #mainMenu li a.home { width: 17px; background: url(images/menu_home.png) no-repeat 0 top; }
 #header #mainMenu li a.home:hover, #header #mainMenu li a.home.selectednode { background-position: -17px top; }
 #header #mainMenu li a { display: inline-block; color: #fff; font-size: 15px; font-weight: bold; height: 100%; }
 #header #mainMenu li a:hover, #header #mainMenu li a.selectednode { color: #005ca0; }
-#header #mainMenu li ul { position:absolute; z-index: 200; top: 33px; right: 0; display: none; background: #909090 url("images/menu_dropdown_bg.png") repeat-x 0 0; }
+#header #mainMenu li ul { position:absolute; z-index: 200; top: 33px; right: 0; display: none; background: rgb(143,153,143) url("images/menu_dropdown_bg.png") repeat-x 0 0; }
 #header #mainMenu li:hover ul { display: block; }
 #header #mainMenu li ul li { float: none; padding: 0 5px; }
 *+html #header #mainMenu li ul li { width: 220px; overflow: hidden; }
@@ -129,7 +129,7 @@ a.readMore99 span { padding-left: 12px; color:#72716D; }
 /**************/
 /***** HP *****/
 /**************/
-#hp { left: 20%; position: absolute ; width: 900px ; height: 589px ;  margin-bottom: 40px;}
+#hp {  width: 900px ; height: 589px ;  margin:auto ; margin-bottom: 40px;}
 /* TABS */
 #hp .tabs {position: relative; height: 360px;}
 #hp .tab { position: relative; z-index: 10; width: 290px; height: 352px; float: right; margin: 0px 0px 0px  10px ;}
@@ -498,18 +498,15 @@ a.readMore99 span { padding-left: 12px; color:#72716D; }
 .ourStations  #map #map_infowindow .infowindow .window{text-align:right;}
 .ourStations  #map #map_infowindow .titlebar{text-align:right;}
 
-/******************/
-/***** FOOTER *****/
-/******************/
-#fixedFooter { width: 100%; height: 38px; position: fixed; z-index: 999999; bottom: 0px; background: url("images/footer_bg.png") repeat-x 0 0; }
-#fixedFooter .container { width: 900px; height: 100%; margin: 0 auto; }
-#fixedFooter .menu { font-size: 14px; margin-top: 16px; }
-#fixedFooter .menu ul { color: #fff; }
+
+#fixedFooter { width: 100% ; height: 38px; position: fixed; z-index: 999999; bottom: 0px; background: rgb(143,153,143); }
+#fixedFooter .menu { font-size: 14px ; width: 900px; margin: auto;  }
+#fixedFooter .menu ul { color: #fff;  }
 #fixedFooter .menu li { float: right; }
 #fixedFooter .menu li.sep { margin: 0 5px; }
 #fixedFooter .menu li a { color: #fff; }
 #fixedFooter .menu li a:hover { color: #005CA0 }
-#fixedFooter .menu li a.fbLink { display: block; position: relative; bottom: 2px; width: 18px; height: 18px; background: url("images/fb_icon.png") no-repeat 0 0; }
+#fixedFooter .menu li a.fbLink { display: block; position: relative; bottom: 2px; width: 18px; height: 18px; background: rgb(143,153,143) }
 #fixedFooter .menu li #ared { color:red }
 
 #moneyReports .tabs{position:relative; right: 10px; height: 400px;margin-top:40px;}
