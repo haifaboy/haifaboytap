@@ -22,7 +22,7 @@
             <a class="logo" href="#"></a>
             <ul id="mainMenu" >
                 <li id="li1" >
-                    <a class="home" href="index.html"  target= '_self' ></a>
+                    <a href="index.html" class="home"></a>
                 </li>    
                 
                 </li>
@@ -324,85 +324,84 @@
             </ul>
         </div>    
     </div>
-    <div id="hp">
-        <div class="tabs">
-            <div class="tab">
-                <img class="bg" alt="קמעונאות ומסחר" src="images/1908364606615453350.JPG"/>
-                <div class="text">
-                    <h3>קמעונאות ומסחר</h3>
-                    <p>במסגרת חטיבת הקו"מ של פז מתבצעת הפעילות הקמעונאית, הנדל"נית, והשיווקית של הקבוצה, שמתאפיינת בחדשנות, יעילות ומובילות. החטיבה פועלת...<br/></p>
-                    <a href="#" class="readMore white" target="_blank">
-                    <span>קרא עוד</span>
+    <div class="layout1">
+                        
+        <div id="sideMenu">
+            <ul>
+                <li>
+                    <a class="selected" href="#">
+                        <span>צור קשר</span>
                     </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="content">
+                                
+            <div id="breadcrumbs" class="fc">
+                <a title="קישור לעמוד הבית" class="treelink" href="index.html" target = "_self"  >עמוד הבית</a><span class="treeseparator"> &gt; </span><span class="treetext">צור קשר</span>
+            </div>
+            <h1 class="title">צור קשר</h1>
+            <div id="contactFormWrapper">
+                    <div class="form">
+                    <h2>צור קשר</h2>
+                    <span class="caption"> ליצירת קשר עם קשרי לקוחות אנא מלאו את הפרטים הבאים ואנו נשמח לעמוד לרשותכם :</span>
+                    <span class="instructions">* השדות המסומנים בכוכבית (*) הינם שדות חובה</span>
+                    <div class="fields">
+                        <div class="line">
+                            <label for="firstname">
+                                <span class="requred">*</span>&nbsp;שם פרטי
+                            </label>
+                            <input name="firstname" type="text" id="infirstname" class="inputtextyellow"/>
+                            <div class="validatorDiv">
+                                <span id="sfirstname" class="validator" style="color:Red;display:none;">שדה חובה</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <label for="lastname">
+                                <span class="requred">*</span>&nbsp;שם משפחה
+                            </label>
+                            <input name="lastname" type="text" id="inlastname" class="inputtextyellow"/>
+                            <div class="validatorDiv">
+                                <span id="slastname" class="validator" style="color:Red;display:none;">שדה חובה</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <label for="phone">
+                                <span class="requred">*</span>&nbsp;טלפון
+                            </label>
+                            <input name="phone" type="text" id="inphone" class="inputtextyellow"/>
+                            <div class="validatorDiv">
+                                <span id="sphone" class="validator" style="color:Red;display:none;">שדה חובה</span>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <label for="email">
+                                <span class="requred">*</span>&nbsp;E-mail
+                            </label>
+                            <input name="email" type="text" id="inemail" class="inputtextyellow emailField"/>
+                                <span id="semail" class="validator" style="color:Red;display:none;">קלט לא מתאים</span>
+                                <div class="validatorDiv">
+                                    <span id="svalidatorDiv" class="validator" style="color:Red;display:none;">שדה חובה</span>
+                                </div>
+                        </div>
+                        <div class="line" id ="cont">
+                            <textarea name="content" rows="3" cols="20" id="incontent" class="inputtextyellow" onfocus="this.value = ''"> תוכן הפנייה</textarea>
+                        </div>
+                        <div class="line" id= "button"> 
+                            <input name="send" type="button" id="send" value="שלח">
+                        </div>                                                            
+                    </div>
                 </div>
             </div>
+        </div> 
+        
+    </div>       
 
-            <div class="tab margins">
-                <img class="bg" alt="זיקוק " src="images/Picture-046410251500.jpg"/>
-            
-                <div class="text">
-                    <h3>זיקוק </h3>
-                    <p>פז זיקוק אשדוד (פז"א) היא חטיבת הזיקוק של קבוצת פז. החטיבה עוסקת בניהול פעילות בית הזיקוק באשדוד, הכוללת ייצור תזקיקי נפט...</p>
-                    <a href="#" class="readMore white" target="_self">
-                    <span>קרא עוד</span>
-                    </a>
-                </div>
-            </div>
 
-            <div class="tab">
-                <img class="bg" alt="תעשיות ושירותים" src="images/291354410564000.jpg"/>
-                <div class="text">
-                    <h3>תעשיות ושירותים</h3>
-                    <p>
-                    <p>תחת חטיבת התעשיות והשירותים של פז פועלות מספר חברות בנות, המתמחות בפיתוח, ייצור ושיווק מוצרי לוואי של נפט, ומובילות את השוק...<br/></p>
-                    </p>
-                    <a href="#" class="readMore white" target="_self">
-                        <span>קרא עוד</span>
-                    </a>
-                </div>
-            </div>
-        </div>    
-    
-        <div class="cubes">  
-            
-            <div class="cubes cube1">
-                <h3 class="cubeh3" >כרטיס אשראי שופרסל וכרטיס אשראי יש</h3>
-                <img src="images/paz_250x110059890678.jpg"  alt="כרטיס אשראי שופרסל וכרטיס אשראי יש"/>
-                <div class ="hrefdiv">
-                    <a id="bannerLink" href="#" class="readMore yellow" target="_blank">
-                        <span>לפרטים נוספים</span>
-                    </a>
-                </div>
-            </div>
-            <div class="cubes cube2">
-                <h3 class="cubeh3" >yellow click&pick;</h3>
-                <img src="images/250X110571325734.jpg"  alt="yellow click&amp;pick"/>
-                <div class ="hrefdiv">
-                    <a id="bannerLink" href="#" class="readMore yellow" target="_blank">
-                        <span>לפרטים נוספים</span>
-                    </a>
-                </div>
-            </div>  
-            <div class="cubes cube3">
-                <h3 class="cubeh3">התחנות שלנו בדרך שלך</h3>  
-                    <div class="fc">
-                    <img src="images/Untitled-3058756287.jpg" alt="התחנות שלנו בדרך שלך"/>
-                    <div class="text">
-                        <a href="/web/20171018152543/http://www.paz.co.il:80/index.aspx?id=4340&amp;location=3" class="readMore yellow" target="_self">
-                            <span>צפון</span>
-                        </a>
-                        <a href="/web/20171018152543/http://www.paz.co.il:80/index.aspx?id=4340&amp;location=2" class="readMore yellow" target="_self">
-                            <span>מרכז</span>
-                        </a>
-                        <a href="/web/20171018152543/http://www.paz.co.il:80/index.aspx?id=4340&amp;location=1" class="readMore yellow" target="_self">
-                            <span>דרום</span>
-                        </a>
-                    </div>    
-                </div>    
-            </div>    
-        </div>    
-    </div>
-  
+                             
+
+
     <div id="fixedFooter">  
         <div class="menu">
                 <ul >
@@ -411,7 +410,7 @@
                     </li>
                     <li class="sep">|</li>
                     <li>
-                        <a  title="קישור לעמוד הבית" href="index.html" target="_self">עמוד הבית</a>
+                        <a  title="קישור לעמוד הבית" href="index.html" target ="_self">עמוד הבית</a>
                     </li>
                     <li class="sep">|</li>
                     <li>
@@ -435,7 +434,7 @@
                     </li>
                     <li class="sep">|</li>
                     <li>
-                        <a  title="קישור לצור קשר" href="connect.html" target= '_self'>צור קשר</a>
+                        <a  title="קישור לצור קשר" href="connect.html" target="_self" >צור קשר</a>
                     </li>
                     <li class="sep">|</li>
                     <li>
