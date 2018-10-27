@@ -1,23 +1,36 @@
+var myVar;
 
-
-function setTimer() {
-    var myVar;
+function startTimer() {
     myVar = setInterval(changePics, 3000);
 }
 
 function changePics() {
-         
-       var npos = document.getElementById("img1").srcdocument.getElementById("img1").src.lastIndexOf("paz_250x110059890678.jpg");  
-       alert (document.getElementById("img1").src ) ;
-       alert (npos ) ; 
-        if ( npos > 0 ) then 
-        {
-            document.getElementById("img1").src = "images/banner_atar.jpg";
-        }
-        else 
-        {
-            document.getElementById("img1").src = "images/paz_250x110059890678.jpg";
-        }
-        alert (document.getElementById("img1").src ) ; 
+  
+ 
+  if ( document.getElementById('img1').src.indexOf("paz_250x110059890678.jpg") > -1 ) 
+  {
+ 
+    document.getElementById('img1').src= "images\\banner_atar.jpg"
+           
+
+  } else {
+
+    document.getElementById('img1').src = "images\\paz_250x110059890678.jpg"
+
+  }
+
+  if ( document.getElementById('img2').src.indexOf("250X110571325734.jpg") > -1 ) 
+  {
+ 
+    document.getElementById('img2').src= "images\\250X110668568400.jpg"
+           
+
+  } else {
+
+    document.getElementById('img2').src = "images\\250X110571325734.jpg"
+
+  }
+ 
+  
 
 }
